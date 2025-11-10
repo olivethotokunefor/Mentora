@@ -1,0 +1,216 @@
+.profile-page {
+  background: var(--bg);
+  min-height: 100vh;
+  padding: 72px 0 2rem; /* top padding for Topbar */
+  font-family: "Inter", sans-serif;
+}
+
+.profile-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+  font-size: 2rem;
+  color: var(--text);
+}
+
+.profile-header p {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: var(--r-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.profile-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.profile-avatar {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.avatar-circle {
+  width: 128px;
+  height: 128px;
+  background: linear-gradient(135deg, var(--primary-2), var(--primary));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.avatar-edit-btn {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.level-badge {
+  margin-top: 1rem;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-btn {
+  background: #f1f5f9;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.profile-stats {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.stat {
+  background: var(--primary-weak);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.bio {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cancel-btn {
+  flex: 1;
+  padding: 1rem;
+  background: #e2e8f0;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.save-btn {
+  flex: 1;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 1.5rem;
+}
+
+.skills-card {
+  background: white;
+  border-radius: var(--r-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border);
+}
+
+.skills-header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.skill-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.skill-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+}
+
+.skill-input button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.skills-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-chip {
+  background: var(--primary-weak);
+  color: var(--primary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.skill-chip button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+}

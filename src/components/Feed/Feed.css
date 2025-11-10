@@ -1,0 +1,11 @@
+.page.page-feed{max-width:1080px;margin:0 auto;padding:32px 20px}
+.page-header{margin-bottom:20px}
+.page-header h1{margin:0 0 6px 0;color:#254221}
+.page-subtitle{margin:0;color:#4a6b38}
+.feed-list{display:grid;gap:12px}
+.card{background:#fff;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,.06);padding:16px}
+.feed-item .feed-title{font-weight:800;color:#254221;margin-bottom:6px}
+.feed-item .feed-content{color:#365314}
+.feed-tags{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.tag{background:#eef6ea;color:#365314;border-radius:999px;padding:6px 10px;font-weight:700;display:inline-flex}
+.empty{background:#fff;border-radius:16px;padding:24px;color:#365314;box-shadow:0 6px 20px rgba(0,0,0,.06)}

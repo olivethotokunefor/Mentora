@@ -1,0 +1,15 @@
+.page.page-ask{max-width:900px;margin:0 auto;padding:32px 20px}
+.page-header{margin-bottom:20px}
+.page-header h1{margin:0 0 6px 0;color:#254221}
+.page-subtitle{margin:0;color:#4a6b38}
+.card{background:#fff;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,.06);padding:16px}
+.field{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.field label{font-weight:700;color:#365314}
+.field input,.field textarea{border:1px solid #dbe7d2;border-radius:12px;padding:10px 12px;font-family:inherit}
+.tags-row{display:flex;gap:8px}
+.tags-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.tag{background:#eef6ea;color:#365314;border-radius:999px;padding:6px 10px;font-weight:700;display:inline-flex;align-items:center;gap:6px}
+.tag .tag-x{background:transparent;border:none;color:#254221;cursor:pointer}
+.btn{background:#87a96b;color:#fff;border:none;border-radius:12px;padding:10px 14px;font-weight:700;cursor:pointer}
+.btn.primary{background:#6b8f5a}
+.btn:hover{filter:brightness(.95)}

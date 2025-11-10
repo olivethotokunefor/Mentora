@@ -1,0 +1,169 @@
+/* Sidebar wrapper */
+.navbar {
+  position: fixed;
+  inset: 0 auto 0 0; /* left side full height */
+  width: 240px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+  box-shadow: 2px 0 12px rgba(2,6,23,0.08);
+  border-right: 4px solid var(--border);
+  border-radius: 0 1.5rem 1.5rem 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem 1rem 1.25rem 1rem;
+}
+
+.navbar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.logo-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(to bottom right, var(--primary-2), var(--primary));
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(2,6,23,0.15);
+}
+
+.icon-white {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Right side */
+.navbar-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+/* Points badge */
+.points {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary-weak); /* primary soft */
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  box-shadow: 0 2px 6px rgba(2,6,23,0.1);
+}
+
+.points-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary);
+}
+
+.points-text {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-btn {
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.75rem;
+  border: none;
+  background: #f1f5f9;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.nav-btn:hover {
+  background: #e2e8f0;
+}
+
+.nav-btn.active {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 10px rgba(2,6,23,0.15);
+}
+
+.logout-btn {
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.75rem;
+  border: none;
+  background: var(--primary-weak);
+  color: var(--primary);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background: #e2e8f0;
+}
+
+.btn-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Footer area inside sidebar */
+.sidebar-footer {
+  margin-top: auto;
+}
+
+/* Responsive collapse */
+@media (max-width: 900px) {
+  .navbar { width: 72px; border-right-width: 2px; }
+  .navbar-container { padding: 10px 8px; }
+  .logo-text { display: none; }
+  .points { justify-content: center; }
+  .points-text { display: none; }
+  .buttons { gap: 6px; }
+  .nav-btn { justify-content: center; padding: 10px; }
+  .nav-btn .label { display: none; }
+  .logout-btn { justify-content: center; padding: 10px; }
+}
+
+/* Expanded state when hamburger toggled */
+@media (max-width: 900px) {
+  body.sidebar-open .navbar { width: 240px; border-right-width: 4px; }
+  body.sidebar-open .logo-text { display: block; }
+  body.sidebar-open .points { justify-content: flex-start; }
+  body.sidebar-open .points-text { display: inline; }
+  body.sidebar-open .nav-btn { justify-content: flex-start; padding: 12px; }
+  body.sidebar-open .nav-btn .label { display: inline; }
+  body.sidebar-open .logout-btn { justify-content: flex-start; padding: 12px; }
+}
